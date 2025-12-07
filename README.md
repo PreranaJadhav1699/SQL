@@ -77,7 +77,5 @@ This repository is created to:
 
 ---
 
-## Author
 
-Prerana Jadhav
 
