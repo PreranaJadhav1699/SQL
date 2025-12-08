@@ -78,7 +78,6 @@ CREATE TABLE BookShop (
     PUBLISHED_DATE DATE
 );
 
-
 TITLE is NOT NULL → every book must have a title.
 
 PRICE uses CHECK (PRICE >= 0) → price cannot be negative.
@@ -101,6 +100,7 @@ Reuse the same steps across environments (dev, test, prod)
 Each command in a script is usually terminated with ;.
 
 Common Things You Do with SQL Scripts
+    
 1. Create tables
 CREATE TABLE BookShop (
     BOOK_ID INT PRIMARY KEY,
@@ -135,7 +135,6 @@ SELECT b.BOOK_ID,
 FROM BookShop b
 JOIN BookShop_AuthorDetails a
   ON b.AUTHOR_ID = a.AUTHOR_ID;
-
 
 Views simplify complex joins and provide a cleaner way to query data.
 
